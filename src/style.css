@@ -33,3 +33,16 @@ a:hover{
     color: #2078fd;
     text-decoration: none;
 }
+.pfp{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 0rem;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+.end{
+    font-size: .85rem;
+}
