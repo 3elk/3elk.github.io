@@ -2,42 +2,36 @@
     text-align: center;
     background-color: #1d1d1d;
     color: #eeeeee;
-    font-family: 'Sour Gummy', 'Afacad Flux', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Outfit','Sour Gummy', 'Afacad Flux', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.text-content {
+    text-align: left;
+    flex: 1;
 }
 .main{
+    margin-top: 200px;
+    margin-bottom: 100px;
     font-size: 1.2rem;
     color: #F5F5DC;
-    font-family: 'Sour Gummy', 'Afacad Flux', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Outfit','Sour Gummy', 'Afacad Flux', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-radius: 8px; 
     padding: 5px; 
     background-color: #7a1fa2; 
-    max-width: 665px; 
+    max-width: 800px; 
     margin: 10px auto; 
-}
-.social a{
-    font-size: 1.2rem;
-    color: #eeeeee;
-    text-decoration: underline;
-    margin-right: 15px;
-}
-a:hover{
-    color: #2078fd;
-    text-decoration: none;
-}
-.main a{
-    font-size: 1.2rem;
-    color: #eeeeee;
-    text-decoration: underline;
-}
-.main a:hover{
-    color: #2078fd;
-    text-decoration: none;
+    transform: translateY(60%);
 }
 .pfp{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin: 0 auto 0rem;
+    margin: 0;
     object-fit: cover;
     border: 3px solid white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -46,34 +40,38 @@ a:hover{
 .end{
     font-size: .85rem;
 }
-.blog1{
-    font-size: 1.2rem;
-    color: #F5F5DC;
-    font-family: 'Sour Gummy', 'Afacad Flux', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-radius: 8px; 
-    padding: 5px; 
-    background-color: #7a1fa2; 
-    max-width: 332.5px; 
-    margin: 10px auto; 
-    margin-left: 510px;
+.social{
+    margin-top: 15px;
 }
-.blogtitle{
-    font-size: 1.2rem;
-    color: #F5F5DC;
-    font-family: 'Sour Gummy', 'Afacad Flux', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-radius: 8px; 
-    padding: 5px; 
-    background-color: #7a1fa2; 
-    max-width: 665px; 
-    margin: 10px auto; 
-}
-.blog1 a{
-    font-size: 1.2rem;
+.social button{
+    font-size: 1.5rem;
     color: #eeeeee;
-    text-decoration: underline;
     margin-right: 15px;
+    background-color: #1d1d1d;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Outfit','Sour Gummy', 'Afacad Flux', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    padding: 10px 15px;
 }
-.blog1 a:hover{
-    color: #2078fd;
+.social button:hover{
+    color: #eeeeee;
+    text-decoration: none;
+    background-color: #2e2e2e;
+    transform: translateY(-5px);
+    transition: transform 0.5s;
+}
+.social button:focus{
+    outline: none;
+}
+.social button:hover-move{
+    transition: transform 0.3s;
+}
+a{
+    color: rgb(226, 226, 226);
+    text-decoration: underline;
+}
+a:hover{
+    color: rgb(81, 148, 255);
     text-decoration: none;
 }
