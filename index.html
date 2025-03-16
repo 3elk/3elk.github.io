@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3elk.github.io</title>
     <link rel="stylesheet" href="src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +13,9 @@
             <div class="overlay-content">
                 <button id="enterButton">Click To Enter</button>
             </div>
+            <audio id="bgMusic">
+                <source src="media/music.mp3" type="audio/mpeg">
+            </audio>
         </div>
         <div class="content-wrapper">
             <div class="main">
@@ -22,7 +24,7 @@
                     <div class="text-content">
                     <h1>3elk.github.io</h1>
                     <p>
-                        Hey, welcome to my site! I go by elk online, I specialize in front-end web-development with programming languages such as Javascript, Python, HTML5, CSS, and Batchfile, with hopes to learn PHP in the future. Im currently working on <a href="https://github.com/3elk/OwlHook" target="_blank">OwlHook🦉</a>, improving my Javascript, and this <a href="https://github.com/3elk/3elk.github.io/" target="_blank">website!</a>
+                        Hey, welcome to my site! I go by elk online, I specialize in front-end web-development with programming languages such as Javascript, Python, HTML5, CSS, and Batchfile, with hopes to learn PHP in the future. Im currently working on <a href="https://github.com/3elk/Calc-Selfbot" target="_blank">Calc-Selfbot</a>, improving my Python skills, and this <a href="https://github.com/3elk/3elk.github.io/" target="_blank">website!</a>
                     </p>
                     <div class="social">
                         <button class="hover-move" onclick="window.open('https://github.com/3elk', '_blank')" alt="https://github.com/3elk">My GitHub</button>
@@ -32,17 +34,9 @@
                 </div>
             </div>
         </div>
-        <div class="music-container">
-            <div class="music-player">
-                <h3>Now Playing: 𝘢 𝘵𝘦𝘢𝘳 𝘢𝘵 𝘦𝘷𝘦𝘯𝘵𝘪𝘥𝘦</h3>
-                <audio id="bgMusic" controls>
-                    <source src="src/music.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-        </div>
         <div class="footer">
             <p>© 2025 website by elk. all rights reserved.</p>
-        <script src="src/script.js"></script>
+        <script src="src/title.js"></script>
+        <script src="src/cte.js"></script>
     </body>
 </html>
