@@ -266,6 +266,26 @@ html {
     background: rgba(0, 0, 0, 0.1);
 }
 
+.footer {
+    background-color: var(--background-color);
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-family: var(--font-stack);
+    font-size: 0.9rem;
+    color: var(--text-color);
+    border-top: 1px solid rgba(122, 31, 162, 0.3);
+    backdrop-filter: blur(8px);
+    z-index: 998;
+}
+
+.footer p {
+    margin: 0;
+}
+
 /* Profile Picture */
 .pfp {
     width: 150px;
