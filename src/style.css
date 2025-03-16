@@ -4,12 +4,6 @@
     color: #eeeeee;
     font-family: 'Outfit','Sour Gummy', 'Afacad Flux', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.content-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-}
 .text-content {
     text-align: left;
     flex: 1;
@@ -25,8 +19,14 @@
     background-color: #7a1fa2; 
     max-width: 800px; 
     margin: 10px auto; 
-    transform: translateY(60%);
+    transform: translateY(45%);
     text-align: center;
+    background-color: var(--primary-color);
+    max-width: 800px;
+    margin: 10px auto;
+    transform: translateY(45%);
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .profile-section {
     display: flex;
@@ -56,29 +56,53 @@
 .social{
     margin-top: 15px;
 }
-.social button{
-    font-size: 1.5rem;
-    color: #eeeeee;
-    margin-right: 15px;
-    background-color: #1d1d1d;
+.social button {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    background-color: var(--background-color);
     border: none;
-    border-radius: 8px;
-    font-family: 'Outfit','Sour Gummy', 'Afacad Flux', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: var(--border-radius);
+    font-family: var(--font-stack);
     cursor: pointer;
-    padding: 10px 15px;
+    padding: 12px 35px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    min-width: 180px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
-.social button:hover{
-    color: #eeeeee;
-    text-decoration: none;
-    background-color: #2e2e2e;
+
+.social button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: 0.5s;
+}
+
+.social button:hover {
+    color: var(--text-color);
+    background-color: var(--primary-color);
     transform: translateY(-5px);
-    transition: transform 0.5s;
+    box-shadow: 0 8px 20px rgba(122, 31, 162, 0.3);
+    letter-spacing: 1px;
 }
-.social button:focus{
-    outline: none;
+
+.social button:hover::before {
+    left: 100%;
 }
-.social button:hover-move{
-    transition: transform 0.3s;
+
+/* Update mobile styles */
+@media screen and (max-width: 768px) {
+    .social button {
+        font-size: 1.2rem;
+        padding: 10px 25px;
+        min-width: 160px;
+    }
 }
 a{
     color: rgb(226, 226, 226);
@@ -219,6 +243,8 @@ html {
     gap: 20px;
     padding: 20px;
     animation: fadeIn 1s ease-in;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
 }
 
 .text-content {
@@ -252,7 +278,7 @@ html {
 
 .main:hover {
     transform: translateY(45%);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, .9);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
 }
 
 /* Profile Section */
@@ -263,28 +289,67 @@ html {
     text-align: left;
     padding: 20px;
     border-radius: var(--border-radius);
-    background: rgba(0, 0, 0, 0.1);
+    background-color: var(--primary-color);
 }
-
 .footer {
-    background-color: var(--background-color);
-    padding: 20px;
+    background-color: rgba(29, 29, 29, 0.95);
+    padding: 15px 30px;
     text-align: center;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     font-family: var(--font-stack);
-    font-size: 0.9rem;
-    color: var(--background-color);
-    border-top: 1px solid rgba(122, 31, 162, 0.3);
-    backdrop-filter: blur(8px);
+    font-size: 0.95rem;
+    color: var(--text-color);
+    border-top: 2px solid rgba(122, 31, 162, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     z-index: 998;
+    box-shadow: 0 -5px 20px rgba(122, 31, 162, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideUp 0.5s ease-out;
 }
 
 .footer p {
     margin: 0;
+    flex: 1;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
 }
+
+.footer p:hover {
+    opacity: 1;
+}
+
+.footer .heart {
+    color: var(--primary-color);
+    display: inline-block;
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Update the HTML to use the heart class */
 
 /* Profile Picture */
 .pfp {
