@@ -144,7 +144,7 @@ a:hover{
     padding: 20px;
     text-align: center;
     position: fixed;
-    bottom: 110px;
+    bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 999;
@@ -184,5 +184,9 @@ audio::-webkit-media-controls-mute-button {
     text-align: center;
     padding: 10px 0;
     font-family: 'Outfit','Sour Gummy', 'Afacad Flux', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -2pmakx 5px rgba(0, 0, 0, 0.2);
+}
+.overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
 }
