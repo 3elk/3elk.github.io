@@ -4,39 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
-    <body class="body">
-        <div id="overlay" class="overlay">
-            <div class="overlay-content">
-                <button id="enterButton">Click To Enter</button>
-            </div>
-            <audio id="bgMusic">
-                <source src="media/music.mp3" type="audio/mpeg">
-            </audio>
+<body class="body">
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <button id="enterButton">Click To Enter</button>
         </div>
-        <div class="content-wrapper">
-            <div class="main">
-                <div class="profile-section">
-                    <img class="pfp" src="media/elkpfp.jpg" alt="pfp">
-                    <div class="text-content">
+        <audio id="bgMusic" loop>
+            <source src="media/music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <div class="content-wrapper">
+        <div class="main">
+            <div class="profile-section">
+                <img class="pfp" src="media/elkpfp.jpg" alt="pfp">
+                <div class="text-content">
                     <h1>3elk.github.io</h1>
                     <p>
                         Hey, welcome to my site! I go by elk online, I specialize in front-end web-development with programming languages such as Javascript, Python, HTML5, CSS, and Batchfile, with hopes to learn PHP in the future. Im currently working on <a href="https://github.com/3elk/Calc-Selfbot" target="_blank">Calc-Selfbot</a>, improving my Python skills, and this <a href="https://github.com/3elk/3elk.github.io/" target="_blank">website!</a>
                     </p>
                     <div class="social">
-                        <button class="hover-move" onclick="window.open('https://github.com/3elk', '_blank')" alt="https://github.com/3elk">My GitHub</button>
-                        <button class="hover-move" onclick="window.open('https://guns.lol/_', '_blank')" alt="https://guns.lol/_">My BioLink</button>
-                        <button class="hover-move" onclick="window.open('https://discordapp.com/users/1324506337601785946', '_blank')" alt="https://discordapp.com/users/1324506337601785946">My Discord</button>
+                        <button class="hover-move" onclick="window.open('https://github.com/3elk', '_blank')">My GitHub</button>
+                        <button class="hover-move" onclick="window.open('https://guns.lol/_', '_blank')">My BioLink</button>
+                        <button class="hover-move" onclick="window.open('https://discordapp.com/users/1324506337601785946', '_blank')">My Discord</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <p>© 2025 website by elk. all rights reserved.</p>
-        <script src="src/title.js"></script>
-        <script src="src/cte.js"></script>
-    </body>
+    </div>
+    <script src="src/title.js"></script>
+    <script src="src/cte.js"></script>
+</body>
 </html>
