@@ -8,6 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
         overlay.style.opacity = '0';
         setTimeout(() => {
             overlay.style.display = 'none';
-        }, 500);
+        }, 1000);
     });
 });
