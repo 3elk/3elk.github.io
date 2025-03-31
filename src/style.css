@@ -1,24 +1,27 @@
-.body{  
+/*THIS CODE IS MESSY
+IM NOT BOTHERED TO CLEAN*/
+
+.body {
     text-align: center;
     background-color: #1d1d1d;
     color: #eeeeee;
-    font-family: 'Outfit','Sour Gummy', 'Afacad Flux', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Space Grotesk','Outfit','Sour Gummy', 'Afacad Flux', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .text-content {
     text-align: left;
     flex: 1;
 }
-.main{
+.main {
     margin-top: 200px;
     margin-bottom: 100px;
     font-size: 1.2rem;
     color: #F5F5DC;
-    font-family: 'Outfit','Sour Gummy', 'Afacad Flux', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-radius: 8px; 
-    padding: 5px; 
-    background-color: #7a1fa2; 
-    max-width: 800px; 
-    margin: 10px auto; 
+    font-family: 'Space Grotesk','Outfit','Sour Gummy', 'Afacad Flux', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #7a1fa2;
+    max-width: 800px;
+    margin: 10px auto;
     transform: translateY(45%);
     text-align: center;
     background-color: var(--primary-color);
@@ -96,7 +99,6 @@
     left: 100%;
 }
 
-/* Update mobile styles */
 @media screen and (max-width: 768px) {
     .social button {
         font-size: 1.2rem;
@@ -152,7 +154,7 @@ a:hover{
     color: #eeeeee;
     background-color: transparent;
     border: none;
-    font-family: 'Outfit','Sour Gummy', 'Afacad Flux', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Space Grotesk','Outfit','Sour Gummy', 'Afacad Flux', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     cursor: pointer;
     width: 100vw;
     height: 100vh;
@@ -202,19 +204,18 @@ audio::-webkit-media-controls-mute-button {
     opacity: 0;
     pointer-events: none;
 }
-/* Base Styles */
+
 :root {
     --primary-color: #7a1fa2;
     --background-color: #1d1d1d;
     --text-color: #eeeeee;
     --hover-color: #2e2e2e;
     --link-hover: rgb(81, 148, 255);
-    --font-stack: 'Outfit','Sour Gummy', 'Afacad Flux', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --font-stack: 'Space Grotesk','Outfit','Sour Gummy', 'Afacad Flux', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     --transition-speed: 0.5s;
     --border-radius: 8px;
 }
 
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -236,7 +237,6 @@ html {
     overflow-x: hidden;
 }
 
-/* Content Layout */
 .content-wrapper {
     display: flex;
     align-items: center;
@@ -255,7 +255,6 @@ html {
     animation-delay: 0.5s;
 }
 
-/* Main Section Styling */
 .main {
     margin-top: 200px;
     margin-bottom: 100px;
@@ -281,7 +280,6 @@ html {
     box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
 }
 
-/* Profile Section */
 .profile-section {
     display: flex;
     align-items: flex-start;
@@ -349,9 +347,6 @@ html {
     100% { transform: scale(1); }
 }
 
-/* Update the HTML to use the heart class */
-
-/* Profile Picture */
 .pfp {
     width: 150px;
     height: 150px;
@@ -370,7 +365,7 @@ html {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.45);
 }
 
-/* Social Buttons */
+
 .social {
     margin-top: 25px;
     display: flex;
@@ -414,7 +409,6 @@ html {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -437,7 +431,6 @@ html {
     100% { transform: scale(1); }
 }
 
-/* Media Queries */
 @media screen and (max-width: 768px) {
     .main {
         margin: 20px;
@@ -472,7 +465,6 @@ html {
     }
 }
 
-/* Print Styles */
 @media print {
     .overlay,
     .social button {
